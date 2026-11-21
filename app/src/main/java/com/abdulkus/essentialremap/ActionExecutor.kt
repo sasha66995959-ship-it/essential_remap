@@ -112,7 +112,7 @@ class ActionExecutor(
         val currentMode = audioManager.ringerMode
         val resolvedMode = if (mode == SoundMode.TOGGLE_SILENT_NORMAL) {
             if (currentMode == AudioManager.RINGER_MODE_NORMAL) {
-                SoundMode.SILENT
+                SoundMode.VIBRATE
             } else {
                 SoundMode.NORMAL
             }
